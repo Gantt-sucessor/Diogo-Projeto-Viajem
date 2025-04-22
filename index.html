@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viagens</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <h1>Gerenciador de Viagens</h1>
+
+  <form id="travel-form">
+    <input type="text" id="motorista" placeholder="Motorista" required />
+    <input type="text" id="passageiro" placeholder="Passageiro" required />
+    <input type="text" id="origem" placeholder="Origem" required />
+    <input type="text" id="destino" placeholder="Destino" required />
+    <input type="number" id="taxa" placeholder="Taxa" required min="0" step="0.01" />
+    <button type="submit">Adicionar Viagem</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Motorista</th>
+        <th>Passageiro</th>
+        <th>Origem</th>
+        <th>Destino</th>
+        <th>Taxa</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody id="table-travel"></tbody>
+  </table>
+
+  <script src="./js/model/model.js"></script>
+  <script src="./js/view/view.js"></script>
+  <script src="./js/controller/controller.js"></script>
+</body>
+</html>
